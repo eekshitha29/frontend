@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Pseudo Selectors</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: blue;
+            border: 2px solid black;
+
+        }
+        div:hover{
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            color: yellowgreen;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 10px 10px 5px 5px orangered;
+        }
+        p::before{
+            content: "Hero!";
+            color: rgb(214, 92, 92);
+        }
+        p::after{
+            content: "Zero";
+            font-family: lucida handwriting ;
+        }
+        p::first-letter{
+            font-family: algerian;
+            color: rgb(126, 126, 172);
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>Hero</div>
+    <p>Heroine </p>
+</body>
+</html>

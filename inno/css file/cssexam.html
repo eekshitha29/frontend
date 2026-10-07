@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Campus Design Forum</title>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: white;
+    padding: 30px 15px;
+    color: #1b1e2b;
+}
+
+.container {
+    max-width: 780px;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.top-bar {
+    height: 5px;
+    background: linear-gradient(to right, #b5c07c, #cc9a8f, #f5a623);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 24px 30px 10px;
+}
+
+.header h1 {
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 0.85rem;
+    color: #7a7f8f;
+    margin-top: 4px;
+}
+
+.pill-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background: #b5c07c;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+
+.eventpage {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 16px;
+    padding: 16px 30px 0;
+}
+
+.eventpage-left {
+     background: linear-gradient(to right, #f5a623, #b5c07c);
+    border-radius: 14px;
+    padding: 26px;
+}
+
+.tags {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    font-weight: bold;
+}
+
+.tag.event { 
+    color: #b5c07c; 
+}
+.tag.design {
+     color: #e8792c; 
+}
+.tag.print {
+     color: #b5c07c; 
+}
+
+.eventpage-left h2 {
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.eventpage-left p {
+    color: #676c7e;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #b5c07c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #e8792c;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+  .eventpage-right {
+    background: #e8792c;
+    color: white;
+    border-radius: 14px;
+    padding: 22px;
+  }
+
+.eventpage-right h3 {
+    font-size: 1;
+    margin-bottom: 14px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    padding: 22px 30px 0;
+}
+
+.step-card {
+    border: 1px solid #b5c07c;
+    border-radius: 12px;
+    padding: 16px 14px;
+    background-color: #b5c07c;
+}
+
+.step-card .num {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step-card .label {
+    color: rgb(67, 33, 79);
+    line-height: 1.5;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 22px 30px 30px;
+}
+
+.panel {
+  border: 1px solid #ececf2;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.panel h4 {
+  margin-bottom: 14px;
+}
+
+.include-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.include-item {
+  background: linear-gradient(to right, #b5c07c, #bed4bc);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.include-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.include-item span {
+  color: #6f7a75;
+  line-height: 1.4;
+}
+
+.schedule-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  background: linear-gradient(to right, #f5a623, #fff);
+}
+
+.schedule-num {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #b5c07c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.schedule-item strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.schedule-item span {
+  color: #7a7f8f;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="top-bar"></div>
+
+  <div class="header">
+    <div>
+      <h1>Campus Design Forum</h1>
+      <p>A compact print-friendly layout for layout and styling practice</p>
+    </div>
+    <div class="pill-row">
+      <span class="pill">Time: 1 Hour</span>
+      <span class="pill">Total Marks: 20</span>
+      <span class="pill">Single Page Output</span>
+    </div>
+  </div>
+
+  <div class="eventpage">
+    <div class="eventpage-left">
+      <div class="tags">
+        <span class="tag event">EVENT</span>
+        <span class="tag design">DESIGN</span>
+        <span class="tag print">PRINT</span>
+      </div>
+      <h2>Design a clean event page for a college workshop.</h2>
+      <p>Create a polished card-style layout that presents workshop details, highlights, and a short schedule. The page should look neat in a printed test paper and should clearly show spacing, alignment, and hierarchy.</p>
+      <div class="buttons">
+        <button class="btn-primary">Register</button>
+        <button class="btn-secondary">View Schedule</button>
+      </div>
+    </div>
+
+    <div class="eventpage-right">
+      <h3>Workshop Details</h3>
+      <div class="detail-row"><span>Date</span><span>25 July 2026</span></div>
+      <div class="detail-row"><span>Time</span><span>10:00 AM</span></div>
+      <div class="detail-row"><span>Venue</span><span>Computer Lab 2</span></div>
+      <div class="detail-row"><span>Topic</span><span>Responsive Layouts</span></div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step-card">
+      <div class="num">01</div>
+      <div class="label">Header with title and chips</div>
+    </div>
+    <div class="step-card">
+      <div class="num">02</div>
+      <div class="label">Two-column hero area with buttons</div>
+    </div>
+    <div class="step-card">
+      <div class="num">03</div>
+      <div class="label">Info panels and content cards</div>
+    </div>
+    <div class="step-card">
+      <div class="num">04</div>
+      <div class="label">Clean output for screenshot</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="panel">
+      <h4>What to include</h4>
+      <div class="include-grid">
+        <div class="include-item">
+          <strong>Workshop theme</strong>
+          <span>Keep the content real and simple, like a college event or student program.</span>
+        </div>
+        <div class="include-item">
+          <strong>Clear spacing</strong>
+          <span>Use padding, margin, and border radius properly so the page feels balanced.</span>
+        </div>
+        <div class="include-item">
+          <strong>Visual contrast</strong>
+          <span>Use headings, color blocks, and soft shadows to separate the sections.</span>
+        </div>
+        <div class="include-item">
+          <strong>Neat alignment</strong>
+          <span>Keep everything aligned in rows and columns for a polished printed look.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h4>Short Schedule</h4>
+      <div class="schedule-item">
+        <div class="schedule-num">1</div>
+        <div>
+          <strong>Welcome session</strong>
+          <span>Introduction to the workshop and objectives.</span>
+        </div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-num">2</div>
+        <div>
+          <strong>Live demo</strong>
+          <span>Build a simple responsive layout step by step.</span>
+        </div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-num">3</div>
+        <div>
+          <strong>Practice task</strong>
+          <span>Create a small page using the same structure.</span>
+        </div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-num">4</div>
+        <div>
+          <strong>Review and submit</strong>
+          <span>Take a screenshot and attach it to the answer sheet.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

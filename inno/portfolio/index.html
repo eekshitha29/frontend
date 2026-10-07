@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Eekshitha | Full Stack Developer</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #0d0f18;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 25px 12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #c65cff;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #c65cff;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        section {
+            padding: 100px 12%;
+            min-height: 70vh;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(170, 70, 255, 0.15),
+                    transparent 50%
+                );
+        }
+
+        #home h1 {
+            font-size: 65px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: #c65cff;
+        }
+
+        #home h3 {
+            color: #a4a7b5;
+            font-size: 22px;
+        }
+
+        #home p {
+            color: #85899a;
+            max-width: 650px;
+            line-height: 1.7;
+        }
+
+        button,
+        .button {
+            padding: 14px 25px;
+            border-radius: 8px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .primary {
+            background: linear-gradient(
+                90deg,
+                #a84cff,
+                #ed4ca8
+            );
+
+            color: white;
+        }
+
+        .secondary {
+            background: transparent;
+            border: 1px solid #754b91;
+            color: white;
+        }
+
+        .socials a {
+            color: #aaa;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        article {
+            background-color: #151823;
+            border: 1px solid #272a38;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        article h3 {
+            color: #c65cff;
+        }
+
+        article p {
+            color: #999eaf;
+            line-height: 1.7;
+        }
+
+        ul {
+            color: #a5a9b8;
+            line-height: 2;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #181b27;
+            border: 1px solid #303344;
+            padding: 15px 25px;
+            border-radius: 25px;
+            color: #c8cbd7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777c8d;
+            border-top: 1px solid #242734;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <h2>Eekshitha</h2>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#education">Education</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home">
+
+    <h1>
+        Hi, I'm
+        <span class="name">
+            Eekshitha
+        </span>
+    </h1>
+
+    <h3>
+        Full Stack Developer
+    </h3>
+
+    <p>
+        Computer Science and Engineering student passionate
+        about creating modern, user-friendly and scalable
+        web applications. I enjoy solving real-world
+        problems using technology.
+    </p>
+
+
+    <div>
+
+        <a href="#projects"
+           class="button primary">
+
+            View My Work
+
+        </a>
+
+        <a href="#contact"
+           class="button secondary">
+
+            Get In Touch
+
+        </a>
+
+    </div>
+
+
+    <div class="socials">
+
+        <a href="https://github.com/"
+           target="_blank">
+
+            GitHub
+
+        </a>
+
+        <a href="https://linkedin.com/"
+           target="_blank">
+
+            LinkedIn
+
+        </a>
+
+        <a href="mailto:yourmail@gmail.com">
+
+            Email
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <h2>
+        About Me
+    </h2>
+
+    <article>
+
+        <h3>
+            Who am I?
+        </h3>
+
+        <p>
+
+            I am a Computer Science and Engineering student
+            interested in full-stack development and
+            software engineering.
+
+        </p>
+
+        <p>
+
+            I enjoy developing applications that combine
+            clean user interfaces with reliable backend
+            functionality.
+
+        </p>
+
+        <p>
+
+            I am continuously improving my programming,
+            database and web development skills by building
+            practical projects.
+
+        </p>
+
+    </article>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <h2>
+        Technical Skills
+    </h2>
+
+
+    <div class="skills">
+
+        <span class="skill">
+            HTML
+        </span>
+
+        <span class="skill">
+            CSS
+        </span>
+
+        <span class="skill">
+            JavaScript
+        </span>
+
+        <span class="skill">
+            Python
+        </span>
+
+        <span class="skill">
+            C++
+        </span>
+
+        <span class="skill">
+            SQL
+        </span>
+
+        <span class="skill">
+            React.js
+        </span>
+
+        <span class="skill">
+            Node.js
+        </span>
+
+        <span class="skill">
+            Django
+        </span>
+
+        <span class="skill">
+            MongoDB
+        </span>
+
+        <span class="skill">
+            MySQL
+        </span>
+
+        <span class="skill">
+            Git
+        </span>
+
+        <span class="skill">
+            GitHub
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <h2>
+        My Projects
+    </h2>
+
+
+    <div class="projects">
+
+
+        <!-- PROJECT 1 -->
+
+        <article>
+
+            <h3>
+                Hybrid Crypto-Steganographic
+                Framework
+            </h3>
+
+            <p>
+
+                Developed a secure data protection system
+                combining encryption, steganography and
+                hashing techniques.
+
+            </p>
+
+            <h4>
+                Technologies
+            </h4>
+
+            <ul>
+
+                <li>Python</li>
+
+                <li>Django</li>
+
+                <li>AES</li>
+
+                <li>ECC</li>
+
+                <li>SHA Hashing</li>
+
+                <li>HTML</li>
+
+                <li>CSS</li>
+
+                <li>JavaScript</li>
+
+            </ul>
+
+            <a href="#"
+               class="button primary">
+
+                View Project
+
+            </a>
+
+        </article>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <article>
+
+            <h3>
+                Public News Droid
+            </h3>
+
+            <p>
+
+                NLP-based application designed to detect
+                multilingual fake news using text analysis
+                and speech recognition.
+
+            </p>
+
+            <h4>
+                Technologies
+            </h4>
+
+            <ul>
+
+                <li>Python</li>
+
+                <li>React.js</li>
+
+                <li>Node.js</li>
+
+                <li>MongoDB</li>
+
+                <li>spaCy</li>
+
+                <li>Hugging Face Transformers</li>
+
+            </ul>
+
+            <a href="#"
+               class="button primary">
+
+                View Project
+
+            </a>
+
+        </article>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <article>
+
+            <h3>
+                Online Book Store
+            </h3>
+
+            <p>
+
+                Developed a full-stack web application
+                for browsing, buying and selling books
+                with a responsive user interface.
+
+            </p>
+
+            <h4>
+                Technologies
+            </h4>
+
+            <ul>
+
+                <li>HTML</li>
+
+                <li>CSS</li>
+
+                <li>JavaScript</li>
+
+                <li>ASP.NET Core</li>
+
+                <li>Entity Framework Core</li>
+
+                <li>SQL Server</li>
+
+            </ul>
+
+            <a href="#"
+               class="button primary">
+
+                View Project
+
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+    <h2>
+        Education
+    </h2>
+
+
+    <article>
+
+        <h3>
+            B.Tech - Computer Science
+            and Engineering
+        </h3>
+
+        <p>
+
+            Rishi M.S Institute of Engineering
+            and Technology for Women
+
+        </p>
+
+        <p>
+
+            <strong>
+                CGPA:
+            </strong>
+
+            7.74
+
+        </p>
+
+        <p>
+
+            <strong>
+                Duration:
+            </strong>
+
+            2022 - 2026
+
+        </p>
+
+    </article>
+
+</section>
+
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+
+    <h2>
+        Experience
+    </h2>
+
+
+    <article>
+
+        <h3>
+            Fresher / Student Developer
+        </h3>
+
+        <p>
+
+            Currently building full-stack projects and
+            strengthening my knowledge of frontend,
+            backend, databases and software development.
+
+        </p>
+
+    </article>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2>
+        Get In Touch
+    </h2>
+
+    <article>
+
+        <h3>
+            Let's Connect
+        </h3>
+
+        <p>
+
+            I am open to internships, entry-level
+            opportunities and software development
+            projects.
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Email:
+            </strong>
+
+            <a href="mailto:cheekshitha29mail@gmail.com">
+
+                cheekshitha29@gmail.com
+
+            </a>
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                LinkedIn:
+            </strong>
+
+            <a href="https://www.linkedin.com/in/eekshitha-chagarlamudi/"
+               target="_blank">
+
+                LinkedIn Profile
+
+            </a>
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                GitHub:
+            </strong>
+
+            <a href="https://github.com/eekshitha29"
+               target="_blank">
+
+                GitHub Profile
+
+            </a>
+
+        </p>
+
+    </article>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Eekshitha Chagarlamudi
+    </p>
+
+    <p>
+        Built with HTML & CSS
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

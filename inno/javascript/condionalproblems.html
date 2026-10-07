@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        .container{
+            background-color: rgb(98, 145, 158);
+            line-height: 4;
+        }
+        .container button{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(238, 209, 140);
+            border: 0 none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .box{
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+
+        <h1>Problem 1: Check given no is equal to 10 using IF-block</h1>
+
+        <label>Enter no: </label>
+        <input type="number" id="10" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="res_10" class="box" readonly><br>
+
+        <button onclick="equalTo10()">Check</button>
+    </div>
+    
+    <div class="container" align="center">
+
+        <h1>Problem 2: Check two numbers are equal using IF-block</h1>
+
+        <label>Enter number 1: </label>
+        <input type="number" id="num1" class="box"><br>
+
+        <label>Enter number 2: </label>
+        <input type="number" id="num2" class="box"><br>
+
+
+        <label>Result: </label>
+        <input type="text" id="res_equal" class="box" readonly><br>
+
+        <button onclick="numEqual()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 3: Check and display the smallest number from given two values using IF - Else block</h1>
+
+        <label>Enter number 1: </label>
+        <input type="number" id="no1" class="box"><br>
+
+        <label>Enter number 2: </label>
+        <input type="number" id="no2" class="box"><br>
+
+
+        <label>Smallest number: </label>
+        <input type="text" id="s_num" class="box" readonly><br>
+
+        <button onclick="smallNum()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 4: Give the discount of 20% if the bill is 
+            above 5k else no discount and display the bill
+            using IF - Else block</h1>
+
+        <label>Bill: </label>
+        <input type="number" id="bill" class="box"><br>
+
+        <label>Discount: </label>
+        <input type="text" id="discount" class="box" readonly><br>
+
+
+        <label>Total Bill: </label>
+        <input type="text" id="t_bill" class="box" readonly><br>
+
+        <button onclick="bill()">Check</button>
+    </div>
+
+
+    <div class="container" align="center">
+
+        <h1>Problem 5: Check if given number is divisible by 5 using IF - Else block</h1>
+
+        <label>Enter number 1: </label>
+        <input type="number" id="divBy5" class="box"><br>
+
+        <label>Divisible by 5: </label>
+        <input type="text" id="res_divBy5" class="box" readonly><br>
+
+        <button onclick="Divisibleby5()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 6: Check if given number is Even or Odd using IF - Else block</h1>
+
+        <label>Enter number 1: </label>
+        <input type="number" id="EvenOrOdd_n" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="EvenOrOdd_res" class="box" readonly><br>
+
+        <button onclick="EvenOrOdd()">Check</button>
+    </div>
+
+    
+
+    <div class="container" align="center">
+
+        <h1>Problem 7: Check given value is vowel (or) Not</h1>
+
+        <label>Enter a character: </label>
+        <input type="text" id="char" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="vc" class="box" readonly><br>
+
+        <button onclick="vowel()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 8: Check given number is in between 1 to 10 or not</h1>
+
+        <label>Enter a Number: </label>
+        <input type="number" id="btwnum" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="btwres" class="box" readonly><br>
+
+        <button onclick="inBtw()">Check</button>
+    </div>
+
+
+    <div class="container" align="center">
+
+        <h1>Problem 9: Check given character is Uppercase alphabet or not</h1>
+
+        <label>Enter a Character: </label>
+        <input type="text" id="u" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="ures" class="box" readonly><br>
+
+        <button onclick="isUpper()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 10: Check given character is Lower case alphabet or not</h1>
+
+        <label>Enter a Character: </label>
+        <input type="text" id="l" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="lres" class="box" readonly><br>
+
+        <button onclick="isLower()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 11: Check given character is Uppercase or Lowercase alphabet or not</h1>
+
+        <label>Enter a Character: </label>
+        <input type="text" id="uorl" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="uorlres" class="box" readonly><br>
+
+        <button onclick="isUpperOrLower()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 12: Check given value is digit or not</h1>
+
+        <label>Enter a number: </label>
+        <input type="number" id="d" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="dres" class="box" readonly><br>
+
+        <button onclick="isDigit()">Check</button>
+    </div>
+
+    
+    
+    <div class="container" align="center">
+
+        <h1>Problem 13: Write a program for login if name is "Hero" and password is "Hero@123"</h1>
+
+        <label>Enter Username: </label>
+        <input type="text" id="u_name" class="box"><br>
+
+        <label>Enter Password: </label>
+        <input type="password" id="u_password" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="login" class="box" readonly><br>
+
+        <button onclick="Login()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 14: Check whether a given number is a 3-digit number or not.</h1>
+
+        <label>Enter Number: </label>
+        <input type="number" id="threeNum" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="threeres" class="box" readonly><br>
+
+        <button onclick="threeDigit()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 15: Check whether a given number is divisible by both 3 and 5 or not</h1>
+
+        <label>Enter Number: </label>
+        <input type="number" id="divisibleNum" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="divisibleres" class="box" readonly><br>
+
+        <button onclick="isDivisibleBy()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 16: Check whether a given triangle is a valid triangle or not</h1>
+
+        <label>Enter Angle 1: </label>
+        <input type="number" id="angle1" class="box"><br>
+
+        <label>Enter Angle 2: </label>
+        <input type="number" id="angle2" class="box"><br>
+
+        <label>Enter Angle 3: </label>
+        <input type="number" id="angle3" class="box"><br>
+
+
+        <label>Result: </label>
+        <input type="text" id="triangleres" class="box" readonly><br>
+
+        <button onclick="isTriangle()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 15: Check whether a given number is a multiple of 10 or not.</h1>
+
+        <label>Enter Number: </label>
+        <input type="number" id="multipleNum" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="multipleres" class="box" readonly><br>
+
+        <button onclick="isMultiple()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 16: Check the type of triangle based on its sides.
+        Equilateral, Isosceles, or Scalene.
+        </h1>
+
+        <label>Enter Angle 1: </label>
+        <input type="number" id="typeOfangle1" class="box"><br>
+
+        <label>Enter Angle 2: </label>
+        <input type="number" id="typeOfangle2" class="box"><br>
+
+        <label>Enter Angle 3: </label>
+        <input type="number" id="typeOfangle3" class="box"><br>
+
+
+        <label>Result: </label>
+        <input type="text" id="typeOfTriangleres" class="box" readonly><br>
+
+        <button onclick="typeOfisTriangle()">Check</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 17: Calculate the electricity bill based on units consumed.
+        0–100: ₹2/unit, 101–200: ₹3/unit, 201–300: ₹5/unit, above 300: ₹7/unit
+        </h1>
+
+        <label>Enter Units: </label>
+        <input type="number" id="e_units" class="box"><br>
+
+        <label>Bill: </label>
+        <input type="text" id="e_bill" class="box" readonly><br>
+
+        <button onclick="electricityBill()">Calculate Bill</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 18: Display the age category.
+        Below 13 → Child, 13–19 → Teenager, 20–59 → Adult, 60 and above → Senior Citizen.
+        </h1>
+
+        <label>Enter Age: </label>
+        <input type="number" id="age" class="box"><br>
+
+        <label>Category: </label>
+        <input type="text" id="category" class="box" readonly><br>
+
+        <button onclick="ageCategory()">Category</button>
+    </div>
+    
+    <div class="container" align="center">
+
+        <h1>Problem 19: Calculate the discount based on shopping amount.
+        Below ₹1,000 → No discount, ₹1,000–₹4,999 → 10%, ₹5,000–₹9,999 → 20%, ₹10,000 and above → 30%.
+        </h1>
+        <label>Enter Bill: </label>
+        <input type="number" id="age" class="box"><br>
+
+        <label>Discount: </label>
+        <input type="text" id="category" class="box" readonly><br>
+
+        <button onclick="ageCategory()">Category</button>
+    </div>
+
+    <div class="container" align="center">
+
+        <h1>Problem 30: Calculator using Switch Case 
+        </h1>
+        <label>Enter Number 1: </label>
+        <input type="number" id="switchNum1" class="box"><br>
+
+        <label>Enter Number 2:</label>
+        <input type="number" id="switchNum2" class="box"><br>
+
+        <label>Enter Operator: </label>
+        <input type="text" id="operator" class="box"><br>
+
+        <label>Result: </label>
+        <input type="text" id="switchRes" class="box" readonly><br>
+
+        <button onclick="switchCalculator()">Calculate</button>
+    </div>
+    <script type="text/javascript" src ="conditionalstatements.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+            /* perspective: 50px; */
+            gap: 20px;
+        }
+        .box{
+            background-color: rgb(101, 168, 168);
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            transition: all 3s;
+            animation-name: box-circle;
+            animation-duration: 3s;
+        }
+        @keyframes box-circle
+        {
+            from
+            {border-radius: 0px;}
+            to
+            {border-radius: 50px;}
+        }
+        /* .box1:hover{
+            transform: rotateX(45deg);
+        }
+        .box2:hover{
+            transform: translateZ(-50px);
+        } */
+    </style>
+</head>
+<body>
+    <div class="box box1">Box</div>
+    <div class="box box2">Box</div>
+    <div class="box box3">Box</div>
+</body>
+</html>
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Problems</title>
+    <style>
+        .container{
+            background-color: rgb(162, 178, 106);
+            line-height: 4;
+        }
+        .container button{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(238, 209, 140);
+            border: 0 none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .number-box{
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>Problem 1: Sum of two Numbers</h1>
+        <label>Enter Number 1: </label>
+        <input type="number" id="Num1" placeholder="Number 1" class="number-box" required><br>
+        <label>Enter Number 2: </label>
+        <input type="number" id="Num2" placeholder="Number 2" class="number-box" required><br>
+        <label> Result: </label>
+        <input type="number" id="Res" placeholder="Result" class="number-box" readonly><br>
+        <button onclick="addTwo()">Result</button>
+    </div>
+
+    <div class="container" align="center">
+        <h1>Problem 2: Average of three Numbers</h1>
+        <label>Enter Number 1: </label>
+        <input type="number" id="Number1" placeholder="Number 1" class="number-box" required><br>
+        <label>Enter Number 2: </label>
+        <input type="number" id="Number2" placeholder="Number 2" class="number-box" required><br>
+        <label>Enter Number 3: </label>
+        <input type="number" id="Number3" placeholder="Number 3" class="number-box" required><br>
+        <label> Result: </label>
+        <input type="number" id="avg" placeholder="Result" class="number-box" readonly><br>
+        <button onclick="avgThree()">Result</button>
+    </div>
+
+    <div class="container" align="center">
+        <h1>Problem 3: Sum of n First Natural Numbers</h1>
+        <label>Enter Number: </label>
+        <input type="number" id="Number" placeholder="Number" class="number-box" required><br>
+        <label> Sum of n First Natural Numbers: </label>
+        <input type="number" id="n" placeholder="Result" class="number-box" readonly><br>
+        <button onclick="sumOfN()">Result</button>
+    </div>
+
+    <div class="container" align="center">
+        <h1>Problem 4: Average of n First Natural Numbers</h1>
+        <label>Enter Number: </label>
+        <input type="number" id="No" placeholder="Number" class="number-box" required><br>
+        <label> Sum of n First Natural Numbers: </label>
+        <input type="number" id="avgOfn" placeholder="Result" class="number-box" readonly><br>
+        <button onclick="avgOfN()">Result</button>
+    </div>
+    
+    <div class="container" align="center">
+        <h1>Problem 5: Missing angle</h1>
+        <label>Enter Angle 1: </label>
+        <input type="number" placeholder="Angle 1" id="1" class="number-box" required><br>
+        <label>Enter Angle 2: </label>
+        <input type="number" placeholder="Angle 2" id="2" class="number-box" required><br>
+        <label>Missing Angle: </label>
+        <input type="number" placeholder="Missing angle" id="ma" class="number-box" readonly><br>
+        <button onclick="missingAngle()">Result</button>
+    </div>
+    <div class="container" align="center">
+        <h1>Problem 6: Simple Intrest</h1>
+        <label>Principal: </label>
+        <input type="number" placeholder="Principal" id="p" class="number-box" required><br>
+        <label>Time: </label>
+        <input type="number" placeholder="Number of years" id="t" class="number-box" required><br>
+        <label>Rate of Intrest: </label>
+        <input type="number" placeholder="Rate of Intrest" id="r" class="number-box" required><br>
+        <label>Simple Intrest </label>
+        <input type="text" placeholder="Simple Intrest" id="si" class="number-box" readonly><br>
+        <button onclick="simpleIntrest()">SI</button>
+        <hr>
+    </div>
+    <div class="container" align="center">
+        <h1>Problem 7: Profit Percentage</h1>
+        <label>Selling Price: </label>
+        <input type="number" placeholder="Selling Price" id="sp" class="number-box" required><br>
+        <label>Cost Price: </label>
+        <input type="number" placeholder="Cost Price" id="cp" class="number-box" required><br>
+        <label>Profit Percentage: </label>
+        <input type="text" placeholder="Profit percentage" id="res" class="number-box" readonly><br>
+        <button onclick="profitPercentage()">Result</button>
+    </div>
+    <div class="container" align="center">
+        <h1>Problem 8: Gross Salary</h1>
+        <label>Enter Basic Salary: </label>
+        <input type="number" placeholder="Basic Salary" id = "basic_Salary" class="number-box" required><br>
+        <label>Enter Intensive%: </label>
+        <input type="number" placeholder="in percentage" id = "intensive" class="number-box" required><br>
+        <label>Enter Bonus%: </label>
+        <input type="number" placeholder="in percentage" id = "bonus" class="number-box" required><br>
+        <label>Gross Salary </label>
+        <input type="number" placeholder="Gross Salary" id = "gross_Salary" class="number-box" readonly><br>
+        <button onclick="grossSalary()">Gross Salary</button>
+    </div>
+    <div class="container" align="center">
+        <h1>Problem 9: Inhand Salary</h1>
+        <label>Enter Basic Salary: </label>
+        <input type="number" placeholder="Basic Salary" id="bs" class="number-box" required><br>
+
+        <label>Enter Incentive%: </label>
+        <input type="number" placeholder="in percentage" id="i" class="number-box" required><br>
+
+        <label>Enter Bonus%: </label>
+        <input type="number" placeholder="in percentage" id="b" class="number-box" required><br>
+
+        <label>Enter PF%: </label>
+        <input type="number" placeholder="in percentage" id="pf" class="number-box" required><br>
+
+        <label>Enter Health Insurance%: </label>
+        <input type="number" placeholder="in percentage" id="hi" class="number-box" required><br>
+
+        <label>Salary: </label>
+        <input type="number" placeholder="Salary" id="S" class="number-box" readonly><br>
+
+        <button onclick="g_Salary()">Gross Salary</button>
+        <button onclick="inhand_Salary()">Inhand Salary</button>
+    </div>
+    <div class="container" align="center">
+        <h1>Problem 10: Last Digit of Given number</h1>
+        <label>Enter Number:   </label>
+        <input type="number" placeholder="Number" id = "last_digit" class="number-box" required><br>
+        <label>Last Digit:  </label>
+        <input type="number" id = "lastDigitResult" class="number-box" readonly><br>
+        <button onclick="lastDigit()">Result</button>
+    </div>
+
+    <div class="container" align="center">
+        <h1>Problem 11: Remove Last Digit from Given Number</h1>
+        <label>Enter Number: </label>
+        <input type="number" id="givenNumber" placeholder="Enter number" class="number-box" required><br>
+        <label>Last Digit: </label>
+        <input type="number" id="lastDigitOutput" class="number-box" required readonly ><br>
+        <button onclick="findLastDigit()">Display Last Digit</button>
+    </div>
+
+    <div class="container" align="center">
+    <h1>Problem 12: Swapping of 2 Numbers</h1>
+
+    <label>Enter Number 1: </label>
+    <input type="number" id="firstNumber" placeholder="Number 1" class="number-box" required><br>
+
+    <label>Enter Number 2: </label>
+    <input type="number" id="secondNumber" placeholder="Number 2" class="number-box" required><br>
+
+    <label>After Swapping Number 1: </label>
+    <input type="number" id="firstOutput" class="number-box" readonly><br>
+
+    <label>After Swapping Number 2: </label>
+    <input type="number" id="secondOutput" class="number-box" readonly><br>
+
+    <button onclick="swapNumbers()">Swap</button>
+    </div>
+
+    
+    <script type="text/javascript" src ="basicproblems.js"></script>
+</body>
+</html>

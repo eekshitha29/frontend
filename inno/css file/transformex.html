@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(103, 146, 146);
+            border: 2px solid rgb(86, 141, 86);
+            transition: all 2s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1:hover{
+            transform: scale(3);
+            background-color: rgb(241, 240, 130);
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(92, 166, 99);
+            border: 2px solid burlywood;
+            transition: all 2s;
+        }
+        .box2:hover{
+            transform: scaleX(3);
+            background-color: burlywood;
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(230, 198, 95);
+            border: 2px solid rgb(4, 28, 4);
+            transition: all 2s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3:hover{
+            transform: scaleY(3);
+            background-color: rgb(89, 62, 140);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Hero</div>
+    <div class="box2">Hero</div>
+    <div class="box3">Hero</div>
+</body>
+</html>

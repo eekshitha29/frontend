@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+        // function Changecolor(){
+        //     document.body.style.backgroundColor = "red";
+        // }
+        // document.getElementById("color")
+
+        function displaytext(){
+            var mytext = document.getElementById("para").innerText
+            // console.log(mytext);
+            // console.log(mytext="newtext");
+            console.log("innertext = ",document.getElementById("para").innertext);
+            console.log("innertext = ",document.getElementById("para").innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <!-- <h1 id="color">Welcome to Inline Js</h1>
+    <button onclick="Changecolor()">Change Bg color</button>
+    <button>Change color</button> -->
+
+    <h1>Inner text</h1>
+    <p id="para">Hello <strong>hi</strong>world</p>
+    <button onclick="displaytext()">Display text</button>
+</body>
+</html>

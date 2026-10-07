@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 500px;
+            width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr)  ;
+            /* grid-template-rows: 1fr 1fr; */
+            gap: 10px;
+        }
+        .box{
+            background-color: rgb(225, 150, 179);
+            border: 1px solid black;
+        }
+        .box1{
+            background-color: rgb(150, 205, 147);
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-row: 1/5;
+            grid-column: 2/3;
+        }
+        .box3{
+            background-color: rgb(101, 129, 129);
+            /* grid-row: 1/4; */
+        }
+        .box8{
+            background-color: rgb(141, 204, 211);
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            /* grid-column: 1/4; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Hero1</div>
+        <div class="box ">Hero2</div>
+        <div class="box box3">Hero3</div>
+        <div class="box">Hero4</div>
+        <div class="box">Hero5</div>
+        <div class="box">Hero6</div>
+        <div class="box">Hero7</div>
+        <div class="box box8">Hero8</div>
+    </div>
+</body>
+</html>

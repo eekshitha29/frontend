@@ -1,0 +1,119 @@
+.container{
+    display: grid;
+    border: 2px solid white;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 400px 100px;
+    height: 100vh;
+    width: auto;
+}
+.header{
+    grid-column: 1/5;
+    background-color: rgb(101, 101, 129);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p input{
+    height: 35px;
+    width: 100px;
+    
+    /* margin: 10px; */
+    border-radius: 5px;
+}
+p button{
+    height: 35px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.nav{
+    grid-column: 1/5;
+    background-color: rgb(86, 146, 118);
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(229, 224, 233);
+}
+.nav a:hover{
+    color: black;
+    font-size: larger;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    display: grid;
+    background-color: rgb(213, 213, 102);
+    grid-column: 1/5;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.section{
+    background-color: rgb(188, 113, 43);
+    grid-column: 2/5;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    align-items: center;
+    font-size: larger;
+    color: beige;
+    padding-left: 10px;
+}
+.footer{
+    grid-column: 1/5;
+    background-color: rgb(56, 126, 125);
+    color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.aside{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: larger;
+    color: whitesmoke;
+    flex-direction: column;
+}
+.aside h3{
+    margin-top: 25px;
+    color: whitesmoke;
+}
+.aside ul{
+    width: 80%;
+    text-align: center;
+
+}
+ul li{
+    list-style: none;
+    width: 100%;
+    background-color: rgba(127, 156, 79, 0.852);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.card{
+    height: 200px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 5%;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5%;
+}
+.card-container{
+    display: flex;
+    
+} 

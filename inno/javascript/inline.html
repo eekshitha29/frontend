@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <script>
+        // function button(){
+        //     alert("welcome");
+        // }
+
+        function Sum(){
+            var number1 = parseInt(document.getElementById("Number1").value); 
+            var number2 = parseInt(document.getElementById("Number2").value); 
+            var Sum = number1 + number2;
+            var Sum = document.getElementById("Sum").value=Sum;
+           
+            // document.write(Sum);
+
+        }
+        function Multiply(){
+            var number1 = parseInt(document.getElementById("Number1").value); 
+            var number2 = parseInt(document.getElementById("Number2").value); 
+            var Multiply = number1 * number2;
+            var Multiply = document.getElementById("Multiply").value=Multiply;
+            // document.write(Sum);
+
+        }
+    </script>
+</head>
+<body>
+    <!-- <h1>Welcome to Inline html</h1>
+    <button onclick="button()">Display Message</button> -->
+
+
+        <label>Number 1: </label>
+        <input type="number" id="Number1"><br>
+        <label>Number 2: </label>
+        <input type="number" id="Number2"><br>
+        <label>Result: </label>
+        <input type="text" id="Sum" id="Multiply" readonly><br>
+        <input type="text" id="Multiply" readonly><br>
+        <button onclick="Sum()">Add</button>
+        <button onclick="Multiply()">Multiply</button>
+
+</body>
+</html>

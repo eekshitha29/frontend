@@ -1,0 +1,22 @@
+.navbar{
+    background-color: rgb(20, 11, 11);
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+    flex-direction: column;
+    width: 300px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media(min-width:700px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+}

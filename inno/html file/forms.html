@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1 align="center">Login Form</h1>
+    <form action="contact.html">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="uname"> Username: </label>
+            <input type="text" id="uname" placeholder="Enter your username" value="HERO " required><br>
+            <label for="pswd"> Password: </label>
+            <input type="password" id="pswd" placeholder="Enter your password" required><br>
+            <label> Email: </label>
+            <input type="email" placeholder="Enter your email" value="hero@example.com"><br>
+            <label> DOB: </label>
+            <input type="date" placeholder="Enter your date of birth"><br>
+            <label> Age: </label>
+            <input type="number" placeholder="Enter your age" value="20" min="16" max="25"><br>
+            <label>Gender: </label>
+            <input type="radio" name="gender" >Male
+            <input type="radio" name="gender" >Female
+            <input type="radio" name="gender" >Other <br>
+            <label>Languages Known:</label><br>
+            <input type="checkbox" name="languages" value="English">English<br>
+            <input type="checkbox" name="languages" value="Telugu">Telugu<br>
+            <input type="checkbox" name="languages" value="Hindi">Hindi<br>
+            <input type="checkbox" name="languages" value="Tamil">Tamil<br>
+        </fieldset>
+        <fieldset>
+            <legend>Address Information</legend>
+            <label>City: </label>
+            <select>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Vizag">Vizag</option>
+        </select>
+        <br>
+        <label>Comments:</label>
+        <textarea placeholder="Comments"></textarea>
+        </fieldset>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

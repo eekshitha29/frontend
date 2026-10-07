@@ -1,0 +1,7 @@
+function addTwonums(){
+    var n1 = parseInt(prompt("Enter Number 1:"));
+    var n2 = parseInt(prompt("Enter Number 2:")); 
+    var sum=n1+n2;
+    document.write("Sum of 2 numbers = ", sum);
+
+}

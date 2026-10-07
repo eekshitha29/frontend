@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(230, 223, 133);
+            border: 2px solid black ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-property: border-radius; */
+            /* transition-property: border-radius,background-color,color,width; */
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+            transition: all 6s linear 2s;
+        }
+        .box:hover{
+            background-color: rgb(132, 207, 122);
+            width: 500px;
+            align-items: center;
+            justify-content: end;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

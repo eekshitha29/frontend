@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>  
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Flex box</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 900px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .Box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            /* margin: 10px; */
+        }
+        #Box1{
+            background-color: rgb(221, 162, 131);
+        }
+        #Box2{
+            background-color: rgb(133, 203, 127);
+        }
+        #Box3{
+            background-color: rgb(144, 153, 195);
+        }
+        #Box4{
+            background-color: rgb(126, 192, 207);
+        }
+        #Box5{
+            background-color: rgb(238, 182, 220);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="Box1" class="Box">Box1</div>
+        <div id="Box2" class="Box">Box2</div>
+        <div id="Box3" class="Box">Box3</div>
+        <div id="Box4" class="Box">Box4</div>
+        <div id="Box5" class="Box">Box5</div>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Pseudo Selectors</title>
+    <style>
+        nav{
+            background-color: rgb(151, 149, 194);
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(18, 8, 8);
+            font-size: 20px;
+            margin: 10px;
+        }
+        a:hover{
+            font-size: 25px;
+            color: white;
+            font-family: cursive;
+            border: 2px solid rgb(88, 88, 129);
+        }
+        a:active{
+            color: red;
+        }
+        button{
+            align:center;
+        }
+        button:active{
+            background-color: rgb(118, 118, 156);
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>&nbsp;
+        <a href="">About</a>&nbsp;
+        <a href="">Contact</a>
+        <hr>
+    </nav>
+    <button>
+        Click Me
+    </button>
+</body>
+</html>

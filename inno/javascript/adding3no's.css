@@ -1,0 +1,19 @@
+.Container{
+    background-color: rgb(248, 248, 118);
+    line-height: 4;
+}
+.Container button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(238, 209, 140);
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.number-box{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+
+}

@@ -1,0 +1,31 @@
+.container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "Header Header Header Header"
+            "Sidebar Main Main Main"
+            "Footer Footer Footer Footer"
+            ;
+            grid-template-rows: 100px 400px 100px;
+            border: 2px solid black;
+        }
+.header{
+            background-color: rgb(105, 167, 146);
+            grid-area: Header;
+            border: 2px solid black;
+        }
+.sidebar{
+            background-color: rgb(105, 167, 117);
+            grid-area: Sidebar;
+            border: 2px solid black;
+        }
+.main{
+            background-color: rgb(191, 182, 79);
+            grid-area: Main;
+            border: 2px solid black;
+        }
+.footer{
+            background-color: rgba(112, 100, 186, 0.77);
+            grid-area: Footer;
+            border: 2px solid black;
+        }

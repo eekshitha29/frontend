@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Calculator</title>
+    <style>
+        .container{
+            background-color: #EAF4FF;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 150vh;
+            
+
+        }
+        .container h1{
+            color: #1E3A8A;
+        }
+        .calculator{
+            background-color: #e5e7eb;
+            line-height: 2;
+            border: 1px solid;
+            height: 450px;
+            width: 400px;
+            border-radius: 5px;
+            margin-top: 100px;
+        }
+
+        .box{
+            border: 1px solid #93C5FD;
+            border-radius: 3px;
+            height: 25px;
+            line-height: 5;
+            background-color:#f8fafc ;
+            margin: 10px;
+            color: #1f2937;
+        }
+
+        .button{
+            border: none;
+            border-radius: 5px;
+            background-color: #3a80e6;
+            height: 30px;
+            width: 70px;
+            margin: 10px;
+            color: #1f2937;
+            cursor: pointer;
+            
+        }
+        .button:hover{
+            background-color: #0f4c81;
+            color: white;
+        }
+
+    </style>
+    <script>
+        function add(){
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var result = number1 + number2;
+            var result = document.getElementById("result").value=result;
+        }
+        function sub(){
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var result = number1 - number2;
+            var result = document.getElementById("result").value=result;
+        }
+        function mul(){
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var result = number1 * number2;
+            var result = document.getElementById("result").value=result;
+        }
+        function div(){
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var result = number1 / number2;
+            var result = document.getElementById("result").value=result;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <label>Enter 1st number: </label>
+            <input type="number" id="number1" class="box"><br>
+            <label>Enter 2nd number: </label>
+            <input type="number" id="number2" class="box"><br>
+            <label>Result: </label>
+            <input type="number" id="result" class="box" readonly><br>
+            <button onclick="add()" class="button">+</button>
+            <button onclick="sub()" class="button">-</button>
+            <button onclick="mul()" class="button">x</button>
+            <button onclick="div()" class="button">/</button>
+        </div>
+    </div>
+</body>
+</html>

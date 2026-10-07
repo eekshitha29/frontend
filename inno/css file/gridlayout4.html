@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr); */
+            /* grid-template-areas: 
+            "A B"
+            "C D"
+            "E F"; */
+            grid-template-areas: 
+            "A B C"
+            "D E F";
+        }
+        .box{
+            font-size: 25px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: rgb(107, 171, 98);
+            grid-area: A;
+        }
+        .box2{
+            background-color: rgb(124, 208, 208);
+            grid-area: B;
+        }
+        .box3{
+            background-color: rgb(234, 79, 82);
+            grid-area: C;
+        }
+        .box4{
+            background-color: rgb(154, 124, 173);
+            grid-area: D;
+        }
+        .box5{
+            background-color: rgb(234, 162, 7);
+            grid-area: E;
+        }
+        .box6{
+            background-color: rgb(145, 185, 157);
+            grid-area: F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+        <div class="box box5">Box5</div>
+        <div class="box box6">Box6</div>
+
+    </div>
+</body>
+</html>
